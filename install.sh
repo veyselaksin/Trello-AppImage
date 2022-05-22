@@ -21,7 +21,6 @@ then
 	mkdir /opt/$APP_PATH_NAME
 	cp -r * /opt/$APP_PATH_NAME
 	cd /opt/$APP_PATH_NAME
-	rm -r install.sh
 	chmod +xwr $APP_PATH_NAME.AppImage
 	chown $SUDO_USER $APP_PATH_NAME.AppImage
 	./$APP_PATH_NAME.AppImage --appimage-extract
